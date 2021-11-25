@@ -3,7 +3,3 @@
 <hr>
 
 - Tablero de trabajo -> https://trello.com/b/EhB8Q8v1/sprint-2
-
-<hr>
-
-- Página en Heroku -> https://vicath.herokuapp.com/
