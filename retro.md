@@ -1,9 +1,11 @@
 - <b> Comenzar a hacer. </b>
 
-    &nbsp;&nbsp;Mejorar la comunacion dentro del equipo. Organizar mejor los tiempos. Tomar decisiones rapido y con seguridad.
+    &nbsp;&nbsp;Mejorar la comunicacion dentro del equipo. Organizar mejor los tiempos. Tomar decisiones rapido y con seguridad.
     &nbsp;&nbsp;Ser un poco mas exigente con nuestros compañeros como con nosotros mismos.
     &nbsp;&nbsp;Hacer actividades para mejorar la confianza del equipo
     &nbsp;&nbsp;Hacer la daily para tener en cuenta en que va cada uno
+    &nbsp;&nbsp;Tomarse en serio el rol de cada uno y asumir la responsabilidad que este conlleva.
+    &nbsp;&nbsp;Aprovechar más los findes largos.
 
 - <b> Hacer más. </b>
 
@@ -27,3 +29,4 @@
     &nbsp;&nbsp;Tener verguenza para hablar, admitir errores o decir que no sabes que hacer.  
     &nbsp;&nbsp;NO dejar las cosas a ultimo momento, preocuparse mas por el avance del resto de compañeros del grupo.
     &nbsp;&nbsp;No comentar sobre los cambios al grupo
+    &nbsp;&nbsp;Borrar repositorios xd.
