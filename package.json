@@ -1,0 +1,14 @@
+{
+  "name": "grupo_7_sprint_2",
+  "version": "1.0.0",
+  "description": "- Repositorio del GitHub -> https://github.com/CamilaPecho/Grupo_7_Vicath_Sprint2",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
