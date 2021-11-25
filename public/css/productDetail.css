@@ -8,8 +8,8 @@ body
 {
     font-family: 'Roboto', sans-serif;
     background-color: #CEE5D0;
+    color: #536FFF;
 }
-
 
 /*----------------------HEADER----------------------*/
 
@@ -21,15 +21,16 @@ div.top-header
     justify-content: space-around;
     width: 100%;
 }
+
 .logo
 {
     display: flex;
     width: 15%;
 }
+
 .imagen-logo
 {
-    width: 40%;
-    
+    width: 45px;
 }
 
 .imagen-logo, .form-busqueda, .cart, .login, .darkmode
@@ -38,12 +39,44 @@ div.top-header
     
 }
 
+.cart, .login, .darkmode{
+    width: 15%;
+}
 
-/*barra de navegacion*/
+.top-header div.form-busqueda {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+}
+
+.form-busqueda form{
+    width: 100%;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+.form-busqueda input{
+    width: 80%;
+    border:0;
+    background-color: #F3F0D7;
+    border-radius: 10px;
+    padding: 5px;
+    padding-left: 10px;
+}
+
+.form-busqueda button{
+    width: 10%;
+    border:0;
+    background-color: #F3F0D7;
+    border-radius: 20px;
+    padding: 5px;
+}
+
 /*---------barra de navegacion--------*/
 
 div.button-header
 {
+    display: none;
     background-color: #FED2AA;
 }
 
@@ -64,7 +97,7 @@ div.button-header nav ul
 }
 
 .iconosHeader {
-    display: flex;
+    display: none;
     align-items: center;
     width: 22%;
     justify-content: space-around;
@@ -77,9 +110,15 @@ div.button-header nav ul
 }
 
 div.burger-menu{
-    display: none;
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    padding: 6px;
+    margin: 5px 2px;
+    color: #FF7070;
+    background-color: #FED2AA;
+    border-radius: 5px;
 }
-
 
 /*--------main Detalle del Producto-------*/
 .Producto{
