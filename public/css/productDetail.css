@@ -8,8 +8,8 @@ body
 {
     font-family: 'Roboto', sans-serif;
     background-color: #CEE5D0;
-    color: #536FFF;
 }
+
 
 /*----------------------HEADER----------------------*/
 
@@ -21,16 +21,15 @@ div.top-header
     justify-content: space-around;
     width: 100%;
 }
-
 .logo
 {
     display: flex;
     width: 15%;
 }
-
 .imagen-logo
 {
-    width: 45px;
+    width: 40%;
+    
 }
 
 .imagen-logo, .form-busqueda, .cart, .login, .darkmode
@@ -39,44 +38,12 @@ div.top-header
     
 }
 
-.cart, .login, .darkmode{
-    width: 15%;
-}
 
-.top-header div.form-busqueda {
-    display: flex;
-    justify-content: space-around;
-    width: 70%;
-}
-
-.form-busqueda form{
-    width: 100%;
-    justify-content: space-around;
-    padding: 5px;
-}
-
-.form-busqueda input{
-    width: 80%;
-    border:0;
-    background-color: #F3F0D7;
-    border-radius: 10px;
-    padding: 5px;
-    padding-left: 10px;
-}
-
-.form-busqueda button{
-    width: 10%;
-    border:0;
-    background-color: #F3F0D7;
-    border-radius: 20px;
-    padding: 5px;
-}
-
+/*barra de navegacion*/
 /*---------barra de navegacion--------*/
 
 div.button-header
 {
-    display: none;
     background-color: #FED2AA;
 }
 
@@ -97,7 +64,7 @@ div.button-header nav ul
 }
 
 .iconosHeader {
-    display: none;
+    display: flex;
     align-items: center;
     width: 22%;
     justify-content: space-around;
@@ -110,57 +77,10 @@ div.button-header nav ul
 }
 
 div.burger-menu{
-    display: flex;
-    font-size: 20px;
-    align-items: center;
-    padding: 6px;
-    margin: 5px 2px;
-    color: #FF7070;
-    background-color: #FED2AA;
-    border-radius: 5px;
+    display: none;
 }
 
 
-media {max-width: 1023px}
-body {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    min-height: 100vh;
-    height: auto;
-}
-
-media{max-width: 1023px}
-
-body {
-    border-collapse: collapse;
-    display: table;
-    background-color: #fff;
-    font-family: "Roboto";
-    font-size: 14px;
-    table-layout: fixed;
-}
-*, :after, :before {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-*, :after, :before {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-::selection {
-    background: #fed2aa;
-}
-
-
-/*Cajita de Producto*/
 /*--------main Detalle del Producto-------*/
 .main{
     display: flex;
@@ -184,6 +104,7 @@ body {
 
 .Lapicera {
     width: 100%;
+    flex-direction: row;
 }
 
 .h3 {
@@ -194,7 +115,8 @@ font-weight: bolder;
 font-size: large;
 float: right;
 padding: 15px;
-background-color:rgb(244, 247, 213)
+background-color:rgb(244, 247, 213);
+flex-direction: row;
 }
 
 .h4 {
@@ -205,6 +127,7 @@ background-color:rgb(244, 247, 213)
     font-size: medium;
     float:right;
     padding: 33px;
+    flex-direction: row;
 }
 
 .h5 {
@@ -215,6 +138,7 @@ background-color:rgb(244, 247, 213)
     font-size:small;
     float: right;
     padding: 40px;
+    flex-direction: row;
 }
 
 
@@ -240,6 +164,7 @@ background-color:rgb(244, 247, 213)
     line-height: 24px;
     border-radius: 4px;
     display: block;
+    flex-direction: row;
 }
 
 
@@ -252,9 +177,11 @@ background-color:rgb(244, 247, 213)
     top: 0;
     bottom: 0;
     background: transparent;
+    color: green;
     border: none;
     font-size: 25px;
     display: inline-block;
+    flex-direction: row;
 }
 
 .fas fa-minus {
@@ -266,9 +193,11 @@ background-color:rgb(244, 247, 213)
     top: 0;
     bottom: 0;
     background: transparent;
+    color: red;
     border: none;
     font-size: 25px;
     display:inline-block;
+    flex-direction: row;
 }
 
 .postalcode {
@@ -283,6 +212,7 @@ background-color:rgb(244, 247, 213)
     border: none;
     font-size: 25px;
     display:inline-block;
+    flex-direction: column;
 }
 
 .enemy {
@@ -301,6 +231,8 @@ background-color:rgb(244, 247, 213)
 
 
 
+
+
 /*-------------------carrusel-------------*/
 .carrusel-caja{
     display: none;
@@ -308,148 +240,73 @@ background-color:rgb(244, 247, 213)
 
 
 
-/* -----------FOOTER ----------*/
+/*-----------FOOTER */
 
-
-.footer-contenedor {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between ; /* space-around dn tablet*/
-    width: 100%; /*sacar en tablet*/
-    padding: 0px; /* en tablet 20px 0px;*/
-    margin-top: 0px;
-    background-color: #FF7070;
-    flex-direction: column;/*row en tablet*/
-    align-items: center;
-}
-
-.imglogos {
-    width: 50%;
-    margin: auto;
-    
-}
-
-/*-----------redes ----------*/
-
-.seguinos {
-    font-size: 22px;
-    width: 100%;
-    text-align: center;
-}
-
-.seguinos h4{
-    padding: 10px;
-    font-size: 20px;
-}
-
-.seguinos i{
-    padding-left: 10px;
-    padding-bottom: 10px;
-    font-size: 30px;
-    width: 20%;
-}
-
-#face
-{
-color: #F3F0D7;
-}
-
-#twitter
-{
-color:#F3F0D7;
-}
-
-#insta
-{
-color: #F3F0D7;
-} 
-
-/*-----------medios de pago ----------*/
 .mediospago {
-    /* display: flex;*/
-    width: 100%; /*cambiar a 33% en tablet*/
-    font-size: 20px;
-    text-align: center;
+    /* display: flex; */
+    width: 33%;
+    font-size: 30px;
 }
-
 .imagen-foot {
     width: 22%;
 }
 
+.footer-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px;
+    margin-top: 40px;
+    background-color: #FF7070;
+}
+
 .imglogos {
-    width: 50%;
+    width: 100%;
 }
 
-.mediospago h4{
-    padding: 10px;
-    font-size: 20px;
-}
-
-.mediospago i{
-    padding-left: 10px;
-    padding-bottom: 10px;
-    font-size: 30px;
-} 
-
-/*-----------suscribite ----------*/
-
-.suscribe{
-    width: 70%; /* cambiar a 33%*/
-    font-size: 22px;
-    padding: 10px;
-    background-color: #F3F0D7;
-    border-radius: 10px;
-    box-shadow: -4px 4px 2px #B0B8FF;
-    text-align: center;
-}
-
-.enemy{
-    padding: 6px;
-}
-input.enemy{
-    width: 90%;
-    padding: 6px;
-    border: 0;
-    border-radius: 10px;
-    box-shadow: -4px 4px 2px #B0B8FF;
-    font-size: 90%; /*cambiar a 16px en tablet*/
-    margin-bottom: 10px;
-}
-
-button.enemy{
-    font-size: 16px;
-    padding: 6px;
-    color: #F3F0D7;
-    background-color:#FF7070;
-    border: 0;
-    border-radius: 10px;
-    box-shadow: -4px 4px 2px #B0B8FF;
-}
-
-.suscribe h4{
-    padding: 10px;
-    font-size: 20px;
-    width: 33%;
-} 
-
-
-
-/*-----WD-----*/
-
-@media (max-width: 991px){
-#product-modal .modal-content .modal-body img.product-cover-modal
+.mediospago h4
 {
-width: 100%}
-#product-modal .modal-content .modal-body .product-cover-modal {
-    background: #fff;
-}}
+    margin: 0;
+}
 
-/*-------tablet-----*/
+.seguinos {
+    font-size: 30px;
+    
+    width: 33%;
+}
 
-@media (min-width: 361px){
+.suscribe {
+    font-size: 30px;
+    width: 33%;
+}
 
-    div.burger-menu{
-        display: none;
+#face
+{
+color: blue;
+}
+
+#twitter
+{
+color:rgb(72, 182, 255);
+}
+#insta
+{
+color: rgb(216, 82, 240);
+}
+
+.enemy {
+    padding: 6px;
+}
+
+
+
+
+/*--------adaptaciones------------*/
+
+@media(min-width: 361px) {
+
+    .form-busqueda button{
+        width: 8%;
     }
 
     .iconosHeader {
@@ -458,21 +315,65 @@ width: 100%}
 
     div.button-header{
         display: block;
+    } 
+
+    .main{
+        margin: 3px auto;
     }
 
-    .form-busqueda button{
-        width: 8%;
+    .modal-content{
+        flex-wrap: wrap;
     }
 
-    main .formLogin{
-        width: 50%;
+    .Lapicera{
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    
+    .lapicera{
+        flex-wrap: wrap;
+        flex-direction: row;
     }
 
-    .button{
-        font-size: 20px;
+    .h3 article{
+        width: 45%;
     }
 
-    /* footer */
+    .h4 article{
+        width: 45%;
+    }
+
+    .h5 article:hover{
+        box-shadow: -4px 4px 2px #B0B8FF;
+        width:47%;
+    }
+
+    .Carrito article:hover{
+        box-shadow: -4px 4px 2px #B0B8FF;
+        width:47%;
+    }
+
+    .title article:hover{
+        box-shadow: -4px 4px 2px #B0B8FF;
+        width:47%;
+    }
+
+    .ui.button.añadir-al-carrito:hover{
+        box-shadow: -4px 4px 2px #B0B8FF;
+        width:47%;
+    }
+
+    .postalcode{
+        box-shadow: -4px 4px 2px #B0B8FF;
+        width:47%;
+    }
+
+    .enemy{
+        box-shadow: -4px 4px 2px #B0B8FF;
+        width:47%;
+    }
+
+
 
     .footer-contenedor {
         
@@ -491,45 +392,121 @@ width: 100%}
     input.enemy{
         font-size: 16px;
     }
+
+    #iconCuenta
+    {
+        position: relative;
+        cursor: pointer;
+    }
+
+    .carrusel-caja {
+    display: flex;
+    width: 100%;
 }
 
 
-/*----desktop----*/
-@media (min-width: 679px){
+
+@media(min-width: 769px) {
 
     .form-busqueda button{
         width: 5%;
     }
 
-    .iconH i {
-        font-size: 24px;
+    .iconosHeader {
+        width: 25%;
+        padding: 10px;
+        display: block;
+        margin: 5px;
     }
 
-    main .formLogin{
-        width: 40%;
+    div.button-header{
+        display: block;
+    } 
+
+    .main{
+        margin: 3px auto;
+    }
+
+    .modal-content{
+        margin: 5px;
+        width: 22%;
+    }
+
+    .Lapicera{
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin: 25px;
+        width: 5%;
     }
     
-}
+    .lapicera{
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin: 25px;
+        width: 5%;
+    }
+    }
+
+    .h3 article{
+        width: 25%;
+    }
+
+    .h4 article{
+        width: 25%;
+    }
+
+    .h5 article:hover{
+        box-shadow: -4px 4px 2px #B0B8FF;
+        width:27%;
+    }
+
+    .Carrito article:hover{
+        box-shadow: -4px 4px 2px #B0B8FF;
+        width:27%;
+    }
+
+    .title article:hover{
+        box-shadow: -4px 4px 2px #B0B8FF;
+        width:27%;
+    }
+
+    .ui.button.añadir-al-carrito:hover{
+        box-shadow: -4px 4px 2px #B0B8FF;
+        width:27%;
+    }
+
+    .postalcode{
+        box-shadow: -4px 4px 2px #B0B8FF;
+        width:27%;
+    }
+
+    .enemy{
+        box-shadow: -4px 4px 2px #B0B8FF;
+        width:27%;
+    }
 
 
-/*Mobile*/
 
-@media(min-width: 361px) {
+    .footer-contenedor {
+        
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 20px 0px; 
+        flex-direction: row;
+        width: 100%;
+    }
 
-.button-header nav ul {
-flex-direction: wrap;
-}
+    .seguinos , .mediospago , .suscribe{
+        
+        width: 33%;
+    }
 
-.Lapicera {
-    width: 80px;
-}
-.imagen-foot {
-    width: 20px;
-    display: inline-block;
-    
-}
-}
+    input.enemy{
+        font-size: 16px;
+    }
 
-.cart {
-    width: 15px;
-}
+    #iconCuenta
+    {
+        position: relative;
+        cursor: pointer;
+    }
