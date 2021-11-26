@@ -171,6 +171,53 @@ div.burger-menu{
     padding: 5px;
 
 }
+
+/*--------Producto (hijos, osea las 3 imagenes abajo de la principal)----*/
+.imagenesProdContenedor
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.imagen-producto {
+    width: 100%;
+}
+
+
+.imagen-producto-hijas {
+    width: 100%;
+    display: flex;
+}
+
+.imagenesProdContenedor::before
+{
+    content: "Cartuchera";
+    font-size: 24px;
+}
+
+.imagen-producto::before
+{
+    content: "$400";
+    color: rgb(3, 177, 70);
+    font-size: 20px;
+}
+
+.imagenesProdContenedor::after
+{
+    content: "Descripcion: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti sequi earum doloribus sapiente, repellat architecto nesciunt iure nam odio eius, soluta quam temporibus! Aperiam maiores consequatur, doloremque cumque tempore voluptate?";
+    font-size: 16px;
+    color: #000;
+}
+
+.descripcionTotalProducto
+{
+    display: none;
+}
+
+
+
+
 /*-----productos relacionados-----*/
 
 .productos-relacionados{
@@ -192,6 +239,30 @@ div.burger-menu{
 }
 
 .productos-relacionados img{
+    width: 70%;
+}
+
+
+/* --------Productos similares----------*/
+.productos-similares{
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #F3F0D7;
+    border-radius: 10px;
+}
+
+.productos-similares article{
+    padding: 10px;
+    text-align: center;
+}
+
+.productos-similares article h3{
+    padding: 5px;
+    text-align: left;
+}
+
+.productos-similares img{
     width: 70%;
 }
 
@@ -338,7 +409,7 @@ button.enemy{
         display: none;
     }
 
-    iconCuenta
+    #iconCuenta
     {
         position: relative;
         cursor: pointer;
@@ -443,6 +514,11 @@ button.enemy{
     }
 
     .productos-relacionados div.articulos{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .productos-similares div.articulos{
         display: flex;
         flex-direction: row;
     }
