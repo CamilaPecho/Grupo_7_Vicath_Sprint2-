@@ -4,7 +4,7 @@
   "description": "- Repositorio del GitHub -> https://github.com/CamilaPecho/Grupo_7_Vicath_Sprint2",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
   },
   "author": "",
   "license": "ISC",
