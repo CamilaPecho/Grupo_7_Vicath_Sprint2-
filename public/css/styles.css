@@ -94,6 +94,11 @@ div.button-header nav ul
 .button-header ul li a{
     text-decoration: none;
     color: #FF7070;
+    transition: all 0.3s;
+}
+
+.button-header ul li a:hover{
+    color: #536FFF;
 }
 
 .iconosHeader {
@@ -492,20 +497,17 @@ button.enemy{
         margin-bottom: 14px;
     }
     
-    
-    
     .login_desplegable {
         position: absolute;
         left: -34px;
         box-sizing: border-box;
         transform: translateX(-10%);
         opacity: 0;
-        width: 107px;
+        width: 106px;
         background-color: white;
         padding: 5px;
         z-index: -2;
-        border-top: 2px solid #2C6460;
-        box-shadow: 0 3px 6px #565656;
+        box-shadow: 0 3px 6px #B0B8FF;
         transition: all 1s;
     }
     
@@ -633,12 +635,11 @@ button.enemy{
         box-sizing: border-box;
         transform: translateX(-10%);
         opacity: 0;
-        width: 210px;
+        width: 200px;
         background-color: white;
         padding: 5px;
         z-index: -2;
-        border-top: 2px solid #2C6460;
-        box-shadow: 0 3px 6px #565656;
+        box-shadow: 0 3px 6px #B0B8FF;
         transition: all 1s;
     }
 }
