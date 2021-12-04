@@ -153,6 +153,21 @@ div.burger-menu{
 
 
 /*--------Nuevo Producto (padre e 3 hijos)----*/
+.tituloP
+{
+margin-bottom: 8px;
+font-weight: 600;
+
+}
+
+.precioP
+{
+color: green;
+font-size: 23px;
+font-weight: bold;
+}
+
+
 .imagenesProdContenedor
 {
     display: flex;
@@ -170,25 +185,9 @@ div.burger-menu{
     display: flex;
 }
 
-.imagenesProdContenedor::before /*es simplemente para agregar un texto, no lo saque de google, esta en la teoria :v*/
-{
-    content: "Cartuchera";
-    font-size: 24px;
-}
 
-.imagen-producto::before
-{
-    content: "$400";
-    color: rgb(3, 177, 70);
-    font-size: 20px;
-}
 
-.imagenesProdContenedor::after
-{
-    content: "Descripcion: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti sequi earum doloribus sapiente, repellat architecto nesciunt iure nam odio eius, soluta quam temporibus! Aperiam maiores consequatur, doloremque cumque tempore voluptate?";
-    font-size: 16px;
-    color: #000;
-}
+
 
 .descripcionTotalProducto /*activar en version PC*/
 {
@@ -198,7 +197,7 @@ div.burger-menu{
 .cantidadYCarrito {
     display: flex;
     margin-top: 12px;
-    justify-content: space-evenly;
+    justify-content: space-between;
     width: 100%;
 }
 .cantidadInput {
@@ -212,7 +211,8 @@ margin-top: 12px;
 .descuentoYPedido {
     display: flex;
     margin-top: 12px;
-    justify-content: space-around;
+    justify-content: space-between;
+    width: 100%;
 }
 .descuento
 {
@@ -220,10 +220,21 @@ margin-top: 12px;
 }
 .descuentoInput
 {
-
+width: 78%;
 }
 
-
+div.cantidad{
+    width: 50%;
+}
+.botonDetalle
+{
+    color: #F3F0D7;
+    padding: 5px;
+    background-color: #FF7070;
+    border: 0;
+    border-radius: 20px;
+    box-shadow: -4px 4px 2px #b0b8ff;
+}
 
 
 
@@ -412,6 +423,10 @@ button.enemy{
 
 @media (min-width:361px){
 
+    .imagen-producto, .imagen-producto-hijas{
+        max-width: 481px;
+    }
+
     .form-busqueda button{
         width: 8%;
     }
@@ -502,7 +517,7 @@ button.enemy{
 
 
     .producto{
-        width: 85%;
+        width: 90%;
         margin: 10px auto;
         padding: 10px;
         background-color: #F3F0D7;
@@ -512,6 +527,10 @@ button.enemy{
 }
 
 @media (min-width:769px){
+
+    .imagen-producto, .imagen-producto-hijas{
+        max-width: none;
+    }
 
     .form-busqueda button{
         width: 5%;
@@ -554,35 +573,43 @@ button.enemy{
         width: 25%;
     }
 
-
-    /*-----Imagenes Padre y 3 hijos--------*/
-    .imagenesProdContenedor::before /*es simplemente para agregar un texto*/
-    {
-    content: "";
-    font-size: 24px;
-    }
-
-    .imagen-producto::before
-    {
-    content: "";
-    }
-
-    .imagenesProdContenedor::after
-    {
-    content: "";
-    }
-
-   
-
     .producto
     {
-        width: 100%;
+        width: 90%;
     }
 
     .descuentoYPedido
     {
         display: none;
     }
+
+    .tituloYPrecio
+    {
+        display: none;
+    }
+
+    .textoDescuento
+    {
+        color: #000;
+        font-size: 12px;
+    }
+
+    .imagen-producto {
+        width: 70%;
+    }
+    .imagen-producto-hijas {
+        width: 30%;
+        display: flex;
+        order: -1;
+        flex-direction: column;
+    }
+
+    .prodHija{
+        width: 75%;
+    }
+
+
+
 
 /*---------------Segunda sección (aca va el titulo precio,etc)*/
     .imagenesProdContenedor { /*para que sean mitades*/
@@ -615,9 +642,33 @@ button.enemy{
 
     }
 
-    .descuentoYPedido2 {
+    .descuentoPC {
         display: flex;
         justify-content: space-between;
         margin-top: 14px;
     }
+
+    .descuentoInput {
+        width: 41%;
+    }
+
+    .pedidoPC
+    {
+        margin-top: 60px;
+    }
+    .Pedido2
+    {
+        text-align: center;
+    }
+
+    .bttonEnvio
+    {
+        color: #F3F0D7;
+        background-color:#FF7070;
+        border: 0;
+        border-radius: 10px;
+        box-shadow: -4px 4px 2px #B0B8FF;
+        padding: 9px;
+    }
+
 }

@@ -4,10 +4,11 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Nombre Producto</title>
+        <title>Detalle del producto</title>
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
         <link rel="stylesheet" href="/css/productDetail.css">
+        <link rel="icon" href="/images/logoIcon.ico">
     </head>
     <body>
         <header>
@@ -63,28 +64,32 @@
         </header>
         <main>
             <section class="producto">
+                <div class="tituloYPrecio">
+                    <p class="tituloP">Calculadora CASIO FX-666</p>
+                    <p class="precioP">$20.000</p>
+                </div>
                 <div class="imagenesProdContenedor">
                 
                 <div class="imagen-producto">
-                    <img src="./images/cartuchera1.jpg" class="cartuchera">
+                    <img src="./images/calculadora1.png" class="cartuchera">
                 </div>
                 
                 <div class="imagen-producto-hijas">
-                    <div class="prodHija"><img src="./images/cartuchera1.jpg" alt=""></div>
-                    <div class="prodHija"><img src="./images/cartuchera1.jpg" alt=""></div>
-                    <div class="prodHija"><img src="./images/cartuchera1.jpg" alt=""></div>
+                    <div class="prodHija"><img src="./images/calculadora2.png" alt=""></div>
+                    <div class="prodHija"><img src="./images/calculadora3.png" alt=""></div>
+                    <div class="prodHija"><img src="./images/calculadora4.png" alt=""></div>
                 </div>
                 
 
                 <div class="cantidadYCarrito">
                     <div class="cantidad">
                     <label for="">Cantidad: 
-                    <input type="number" class="cantidadInput">
+                    <input type="number" class="cantidadInput" minlength="0" maxlength="15">
                     </label>
                     </div>
 
                     <div class="carrito">
-                        <button type="button"><i class="fas fa-cart-plus"></i> Agregar a carrito</button>
+                        <button type="button" class="botonDetalle"><i class="fas fa-cart-plus"></i> Agregar a carrito</button>
                         
                     </div>
                 </div>
@@ -95,28 +100,33 @@
 
                 <div class="descuentoYPedido">
                     <div class="descuento">
-                        <input type="text" class="descuentoInput" placeholder="Ingresa tu código de descuento">
+                        <input type="text" class="descuentoInput" placeholder="Código de descuento">
                     </div>
                     <div class="Pedido">
-                        <button type="button"><i class="fas fa-truck"></i> Calcular envio</button>
+                        <button type="button" class="botonDetalle"><i class="fas fa-truck"></i> Calcular envio</button>
                     </div>
                 </div>
                 
             </div>
                 <div class="descripcionTotalProducto">
-                    <h4 class="titulo">Cartuchera marca ACME</h4> 
+                    <h4 class="titulo">Calculadora CASIO FX-666</h4> 
                     <p class="precio">$12000</p>
                     <p class="descripcion">
                     Descripcion: Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
                     Ab velit excepturi pariatur quas sed totam earum facilis magnam 
                     id optio sint qui harum voluptatum neque provident ea reiciendis 
                     </p>
-                    <div class="descuentoYPedido2">
+                    <div class="descuentoPC">
                         <div class="descuento2">
-                            <input type="text" class="descuentoInput" placeholder="Ingresa tu código de descuento">
+                            <label for="" class="textoDescuento">¿Tenés algún código de descuento?
+                            <input type="text" class="descuentoInput" placeholder="Código de descuento"></label>
                         </div>
+
+                    </div>
+
+                    <div class="pedidoPC">
                         <div class="Pedido2">
-                            <button type="button"><i class="fas fa-truck"></i> Calcular envio</button>
+                            <button type="button" class="bttonEnvio"><i class="fas fa-truck"></i> Calcular envio</button>
                         </div>
                     </div>
                 
